@@ -188,7 +188,7 @@ let
     conda create -n ${condaJlEnv} python=${pythonVersion}
   '';
 in
-pkgs.buildFHSUserEnv {
+pkgs.buildFHSEnv {
   inherit multiPkgs extraOutputsToInstall;
   targetPkgs = targetPkgs;
   name = commandName; # Name used to start this UserEnv
