@@ -3,7 +3,7 @@
 , fetchurl
 , runCommand
 , makeWrapper
-, buildFHSUserEnv
+, buildFHSEnv
 , libselinux
 , libarchive
 , libGL
