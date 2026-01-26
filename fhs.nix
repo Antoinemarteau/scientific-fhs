@@ -70,7 +70,7 @@ let
       libGL
       libcap
       libdrm
-      libgnome-keyring3
+      libgnome-keyring
       libgpg-error
       libnotify
       libpng
