@@ -38,7 +38,7 @@ let
       openssl
       stdenv.cc
       unzip
-      utillinux
+      util-linux
       which
       texliveScheme
       ncurses
