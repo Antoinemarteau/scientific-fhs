@@ -3,7 +3,7 @@
 let
   versionShas = {
     "1.12.5" = "sha256-QbhNcn5Olvvz7Z6S+hlddz0ke5CX9z+taI+LaZdYuuc=";
-    "1.12.2" = "sha256-fSrdnudO4vErXCaLwZR5TMUupED4aH+6sp22r++/abc=";
+    "1.12.2" = "sha256-ptDDnqVzA+vP+nqNRTQpuG6yceFQx8sPWVj+ZZCbSTo=";
     "1.12.1" = "sha256-fSrdnudO4vErXCaLwZR5TMUupED4aH+6sp22r++/abc=";
     "1.11.5" = "sha256-cj6HjGQiIMwCUaDhN1jAWaOJytx/ATdv6vHqc4j+j5w=";
     "1.11.1" = "sha256-zKjRPcRQfk9ioSkyIpMxPuV08wDU3559swt7QcX4qPM=";
