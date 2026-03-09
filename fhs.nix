@@ -38,7 +38,7 @@ let
       openssl
       stdenv.cc
       unzip
-      utillinux
+      util-linux
       which
       texliveScheme
       ncurses
@@ -70,7 +70,7 @@ let
       libGL
       libcap
       libdrm
-      libgnome-keyring3
+      libgnome-keyring
       libgpg-error
       libnotify
       libpng
