@@ -1,7 +1,20 @@
 { stdenv, lib, fetchurl, zlib, glib, xorg, dbus, fontconfig, freetype, libGL, juliaVersion }:
 
 let
+  # To find the sha256 for a new version instead of guessing and rebuilding,
+  # save the following as get-julia-hash.sh and run e.g. `./get-julia-hash.sh v1.13.0`:
+  #
+  #   #!/usr/bin/env bash
+  #   # Usage: ./get-julia-hash.sh vX.Y.Z
+  #   set -euo pipefail
+  #   version="${1#v}"
+  #   majorMinor="${version%.*}"
+  #   url="https://julialang-s3.julialang.org/bin/linux/x64/${majorMinor}/julia-${version}-linux-x86_64.tar.gz"
+  #   hash=$(nix-prefetch-url --type sha256 "$url")
+  #   nix hash to-sri --type sha256 "$hash"
   versionShas = {
+    "1.13.0" = "sha256-iXXaYcEopeXe0+cZ6GjajIeB3reteRPTf7mb4CqBkEs=";
+    "1.12.6" = "sha256-u6vzvvGUIanb0kp2fYB2BquF5EQyO1occ//ik/o9B5o=";
     "1.12.5" = "sha256-QbhNcn5Olvvz7Z6S+hlddz0ke5CX9z+taI+LaZdYuuc=";
     "1.12.2" = "sha256-ptDDnqVzA+vP+nqNRTQpuG6yceFQx8sPWVj+ZZCbSTo=";
     "1.12.1" = "sha256-fSrdnudO4vErXCaLwZR5TMUupED4aH+6sp22r++/abc=";
@@ -10,6 +23,7 @@ let
     "1.11.6" = "sha256-6Z5S4gKdhFCXxo8jctg2GG8Os/uJep3eC9+e6SUNA9U=";
     "1.11.0" = "sha256-vPgVVT/aLteRBSTIyqGJyOgZGkCnmd2LX77Q2d1riCw=";
     "1.11.0-rc1" = "sha256-2dfKgQhxhau7ijdcQfc03upuomrvLcQNmUZ/jFx8yNY=";
+    "1.10.12" = "sha256-sMUN/jSddv/IWA0k4MC+YjmIptke1XrYtzwBN/0nvA0=";
     "1.10.10" = "sha256-anigOnHHq3kuhnPcXO25GOA38IHOtYtQlx37fGTFv4E=";
     "1.10.9" = "sha256-Wi0sUiRZS2g8l+cwTLckB/vPC+SgGHeJy6Gi9z8Mvwk=";
     "1.10.4" = "sha256-B59hdXw7W0DSreBSs8xIFvUPfvbfZogldyVis3Rq3/E=";
