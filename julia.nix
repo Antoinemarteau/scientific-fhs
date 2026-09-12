@@ -1,4 +1,4 @@
-{ stdenv, lib, fetchurl, zlib, glib, xorg, dbus, fontconfig, freetype, libGL, juliaVersion }:
+{ stdenv, lib, fetchurl, zlib, glib, libxi, libxcb, libxrender, libx11, libsm, libice, libxext, dbus, fontconfig, freetype, libGL, juliaVersion }:
 
 let
   # To find the sha256 for a new version instead of guessing and rebuilding,
@@ -65,13 +65,13 @@ let
         stdenv.cc.cc
         zlib
         glib
-        xorg.libXi
-        xorg.libxcb
-        xorg.libXrender
-        xorg.libX11
-        xorg.libSM
-        xorg.libICE
-        xorg.libXext
+        libxi
+        libxcb
+        libxrender
+        libx11
+        libsm
+        libice
+        libxext
         dbus
         fontconfig
         freetype
