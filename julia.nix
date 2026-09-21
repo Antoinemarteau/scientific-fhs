@@ -14,6 +14,7 @@ let
   #   nix hash to-sri --type sha256 "$hash"
   versionShas = {
     "1.13.0" = "sha256-iXXaYcEopeXe0+cZ6GjajIeB3reteRPTf7mb4CqBkEs=";
+    "1.12.7" = "sha256-Tn6ed2Y00kg1JQ3mfN45sNSvFbxDLrIGl+a+bCjqaeg=";
     "1.12.6" = "sha256-u6vzvvGUIanb0kp2fYB2BquF5EQyO1occ//ik/o9B5o=";
     "1.12.5" = "sha256-QbhNcn5Olvvz7Z6S+hlddz0ke5CX9z+taI+LaZdYuuc=";
     "1.12.2" = "sha256-ptDDnqVzA+vP+nqNRTQpuG6yceFQx8sPWVj+ZZCbSTo=";
